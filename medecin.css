@@ -1,0 +1,111 @@
+header {
+    background-color: #5aeef3;
+    display: flex;
+    border-radius: 40px;
+    height: 150px;
+    grid-area: entete;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.imgx{
+    border-radius: 100px;
+    margin-left: -60px;
+}
+
+   
+
+
+.x{
+    padding: 10px;
+    display:flex;
+}
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+header .x a {
+    position: relative;
+    margin: 0 10px;
+    text-decoration: 0;
+    color: rgb(8, 8, 165);
+    font-size: 1.5em;
+    transition: 0.75s;
+    top: -20px;
+}
+
+header .x  a:before{
+    position: absolute;
+    top: -2px;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: 0.75s;
+}
+
+header .x a:hover:before{
+    width: 100%;
+}
+
+header .x a:hover:before{
+    color: black;
+}
+input[type='submit'] {
+    margin-top: 20px;
+    font-size: 1em;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+fieldset {
+    background-color: aliceblue;
+    margin-top: 10px;
+}
+legend{
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+table{
+    width: 100%;
+    margin-top: 50px;
+  }
+ td { 
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+th{
+  background-color: rgb(181, 194, 201);
+  font-size: x-large;
+  color: white;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+h1{
+  text-align: center;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .x {   
+      flex-direction: column;
+    }
+    body{
+        grid-template-columns: 1fr;
+            grid-template-areas:
+            'entete'
+            'row';
+    }
+  }

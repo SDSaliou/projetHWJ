@@ -1,0 +1,143 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #5aeef3;
+    flex-direction: row;
+    grid-area: entete;
+}
+
+.imgx{
+    border-radius: 100px;
+}
+
+header.logo{
+    display: flex;
+    color: blue;
+    font-size: 3em;
+    padding: 10px 5%;
+}
+header .logo span{
+    color: blue;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -50px;
+    position: absolute;
+}
+div.logo{
+    display: flex;
+    font-size: 1.5em;
+    color: red;
+}
+.x{
+    display: flex;
+}
+
+header .x a {
+    position: relative;
+    margin: 0 10px;
+    text-decoration: 0;
+    color: rgb(8, 8, 165);
+    font-size: 1.5em;
+    transition: 0.75s;
+    top: -20px;
+}
+
+header .x  a:before{
+    position: absolute;
+    top: -2px;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: 0.75s;
+}
+
+header .x a:hover:before{
+    width: 100%;
+}
+
+header .x a:hover:before{
+    color: black;
+}
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 1em;
+     text-align: center;
+}
+h4 {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: -20px;
+    margin-top: 20%;
+    text-decoration: underline;
+}
+
+.def{
+    display: grid;
+    grid-area: def;
+    background-color: white;
+    border-radius: 100px; 
+    text-align: center;
+    padding: 100px;
+}
+
+img{
+    border-radius: 25px;
+}
+
+p {
+    font-family: Georgia,;
+    font-size: 2em;
+    
+}
+.gauche {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    background-size: cover;
+    border-radius: 100px;
+}
+
+footer{ 
+    grid-area: footer;
+    padding: 10px;
+    background-color: white;
+}
+
+.bas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 10px;
+    color: black;
+}
+body{
+    background-color: aliceblue;
+}
+@media screen and (max-width: 700px) {
+    .row, .x {   
+      flex-direction: column;
+    }
+  }
+@media screen and (max-width:1000.98px){
+    .fa-brands{
+      display: block !important;
+    }     
+    body{
+	grid-template-columns: 1fr;
+        grid-template-areas:
+        'entete'
+        'gauche'
+        'def'
+        'footer';
+      }
+}
+
