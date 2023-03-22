@@ -29,6 +29,7 @@
                 infirmier
             </button>
             <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="listedesinfirmiers.php">liste des infirmiers </a></li>
                     <li><a class="dropdown-item" href="#ajout">Ajouter un(e) infirmier(e) </a></li>
                     <li><a class="dropdown-item" href="suppersonnel.php"> supprimer un(e) infirmier(e)</a></li>
                     <li><a class="dropdown-item" href="Rechercheinfirmiercode.php">rechercher un(e) infirmier(e)</a></li>
@@ -40,6 +41,7 @@
                 medecin
             </button>
             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="listedesmedecin.php">liste des medecins </a></li>
                     <li><a class="dropdown-item" href="#ajout">Ajouter un(e) medecin </a></li>
                     <li><a class="dropdown-item" href="suppersonnel.php"> supprimer un medecin</a></li>
                     <li><a class="dropdown-item" href="Recherchermedecinparcode.php"> rechercher un medecin</a></li>
