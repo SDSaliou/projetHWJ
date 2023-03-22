@@ -4,7 +4,7 @@
 ?>
 <html lang="'en">
   <head>
-    
+    <link rel="stylesheet" href="liste.css">
   </head>
 <body>
   <h1> dossier medical du patient </h1>
